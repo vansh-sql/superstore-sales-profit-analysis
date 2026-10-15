@@ -7,6 +7,9 @@ An interactive Power BI dashboard designed to analyze retail sales performance, 
 The objective of this project is to transform retail sales data into meaningful business insights using Microsoft Power BI. The dashboard helps users explore sales performance, compare product categories, identify top-selling sub-categories, and investigate profit contributions.
 
 This project demonstrates practical skills in data preparation, data visualization, DAX calculations, and business reporting.
+## Dashboard Preview
+
+![Superstore Sales & Profit Dashboard](dashboard/superstore-sales-profit-dashboard.png)
 
 ## Business Objectives
 
