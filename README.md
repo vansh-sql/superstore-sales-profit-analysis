@@ -191,12 +191,12 @@ If you build on this project, use your own analysis and document the changes you
 
 Recommended repository structure:
 
-```text
-superstore-sales-profit-analysis/
+```superstore-sales-profit-analysis/
 ├── README.md
+├── Retail_Vista_Sales_Dataset.csv
 ├── Superstore_Sales_Profit_Analysis.pbix
-└── screenshots/
-    └── dashboard.png
+└── images/
+    └── superstore-sales-profit-dashboard.png
 ```
 
 Include the dataset only when its licence permits redistribution.
