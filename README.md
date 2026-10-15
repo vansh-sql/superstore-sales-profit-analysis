@@ -9,7 +9,7 @@ The objective of this project is to transform retail sales data into meaningful 
 This project demonstrates practical skills in data preparation, data visualization, DAX calculations, and business reporting.
 ## Dashboard Preview
 
-![Superstore Sales & Profit Dashboard](dashboard/superstore-sales-profit-dashboard.png)
+![Superstore Sales & Profit Dashboard](superstore-sales-profit-dashboard.png.png)
 
 ## Business Objectives
 
