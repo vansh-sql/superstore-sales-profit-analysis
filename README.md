@@ -1,143 +1,155 @@
 # Superstore Sales & Profit Analysis | Power BI
 
-An interactive Power BI dashboard designed to analyze retail sales performance, profitability, product categories, customer segments, shipping modes, and monthly sales trends.
+An interactive Power BI project focused on retail sales performance, product analysis, profitability, customer segments, shipping modes, and geographic sales distribution.
 
 ## Project Overview
 
-The objective of this project is to transform retail sales data into meaningful business insights using Microsoft Power BI. The dashboard helps users explore sales performance, compare product categories, identify top-selling sub-categories, and investigate profit contributions.
+The objective of this project is to analyze retail sales data and present useful business insights through an interactive Power BI report.
 
-This project demonstrates practical skills in data preparation, data visualization, DAX calculations, and business reporting.
+The report combines key performance indicators with visual analysis of sales trends, product categories, sub-categories, customer segments, profit contribution, and geographic performance.
+
 ## Dashboard Preview
 
-![Superstore Sales & Profit Dashboard](superstore-sales-profit-dashboard.png)
+![Superstore Sales & Profit Dashboard](./images/superstore-sales-profit-dashboard.png)
 
 ## Business Objectives
 
 - Analyze overall sales and profitability.
 - Track monthly sales trends.
-- Identify the highest-performing product categories and sub-categories.
-- Compare sales across shipping modes and customer segments.
-- Explore the relationship between discounts and profit.
-- Investigate positive and negative profit contributions.
-- Present key business metrics through an interactive dashboard.
+- Compare product categories and sub-categories.
+- Explore sales distribution across shipping modes and customer segments.
+- Examine the relationship between discounts and profit.
+- Identify positive and negative profit contributions.
+- Compare sales performance across countries and states.
 
 ## Tools & Technologies
 
-- **Microsoft Power BI Desktop** — Dashboard development
-- **Power Query** — Data cleaning and transformation
+- **Microsoft Power BI Desktop** — Dashboard development and reporting
+- **Power Query** — Data preparation and transformation
 - **DAX** — Measures and KPI calculations
-- **Data Visualization** — Business performance reporting
+- **Data Visualization** — Business performance analysis
 
 ## Dataset Description
 
-The dataset contains retail sales information used to analyze product performance, customer segments, shipping preferences, and profitability.
+The project uses retail sales data containing information about orders, products, customers, shipping, sales, and profit.
 
-The fields used in the analysis include:
+Key fields used in the analysis include:
 
-- Order Date
-- Order ID
-- Sales
-- Profit
-- Quantity
-- Discount
-- Category
-- Sub-Category
-- Region
-- Market
-- Segment
-- Ship Mode
+- Order Date and Order ID
+- Sales, Profit, Quantity, and Discount
+- Category and Sub-Category
+- Customer Name and Customer ID
+- Region, State, Country, and Market
+- Segment and Ship Mode
 
-The dataset's original source and usage permissions should be documented before redistributing the raw data.
+The original dataset's source and usage permissions should be checked before redistributing the raw data.
 
 ## Dashboard KPIs
 
-The dashboard includes the following key performance indicators:
+The main dashboard includes:
 
 | KPI | Purpose |
 |---|---|
 | Total Sales | Measures overall sales value |
 | Profit Margin (%) | Shows profit as a percentage of sales |
 | Total Orders | Tracks order volume |
-| Total Quantity Sold | Measures the quantity sold |
+| Total Quantity Sold | Measures total quantity sold |
 
-The KPI values depend on the data and filter context in the Power BI report.
+KPI values depend on the report's filter context.
 
 ## Dashboard Features
 
-### 1. Sales Distribution by Ship Mode
+### Page 1 — Sales & Profit Overview
+
+**1. Sales Distribution by Ship Mode**
+
 A donut chart compares sales distribution across shipping modes.
 
-### 2. Monthly Sales Trend
+**2. Monthly Sales Trend**
+
 A line chart displays monthly sales performance and helps identify changes over time.
 
-### 3. Top 5 Sub-Categories by Sales
+**3. Top 5 Sub-Categories by Sales**
+
 A bar chart ranks the five highest-selling sub-categories.
 
-### 4. Monthly Sales by Category
+**4. Monthly Sales by Category**
+
 A matrix compares monthly sales across Furniture, Office Supplies, and Technology.
 
-### 5. Sales Decomposition Tree
-A decomposition tree allows sales to be explored by category, sub-category, and region.
+**5. Sales Decomposition Tree**
 
-### 6. Discount vs Profit — Furniture
-A scatter chart helps examine the relationship between discounts and profit for Furniture products.
+An interactive decomposition tree explores sales by category, sub-category, and region.
 
-### 7. Orders by Customer Segment
-A funnel chart compares order volume across Consumer, Corporate, and Home Office segments.
+**6. Discount vs Profit — Furniture**
 
-### 8. Profit Contribution by Category and Sub-Category
+A scatter chart examines the relationship between discounts and profit for Furniture products.
+
+**7. Orders by Customer Segment**
+
+A funnel chart compares order volume across customer segments.
+
+**8. Profit Contribution by Category and Sub-Category**
+
 A waterfall chart displays positive and negative profit contributions.
 
-### 9. Sales by Category
-A bar chart compares sales across the main product categories.
+**9. Sales by Category**
+
+A bar chart compares sales across the three main product categories.
+
+### Page 2 — Product & Geographic Analysis
+
+**1. Sales Contribution by Category & Sub-Category**
+
+A treemap compares sales contribution across product categories and sub-categories.
+
+**2. Top 10 States by Sales**
+
+A horizontal bar chart ranks states or geographic areas by sales. Since the dataset contains locations from multiple countries, state names should be interpreted alongside their countries when comparing geographic performance.
+
+**3. Top 10 Countries by Sales**
+
+A horizontal bar chart compares sales across countries and highlights the highest-performing markets in the displayed report context.
 
 ## Key Findings
 
-The following observations are based on the dashboard screenshot.
+The following observations are based on the dashboard values previously reviewed. Verify them again after finalizing the report filters.
 
-### 1. Technology Has the Highest Category Sales
-Technology records approximately 4.7M in sales, followed by Furniture at approximately 4.1M and Office Supplies at approximately 3.8M.
+- **Category performance:** Technology has the highest displayed category sales, followed by Furniture and Office Supplies.
+- **Sub-category performance:** Phones ranks first among the displayed top five sub-categories.
+- **Shipping preference:** Standard Class accounts for the largest displayed share of sales.
+- **Monthly trends:** Sales fluctuate across months, making trend analysis useful for understanding changes in performance.
+- **Profitability:** Sales and profit should be evaluated together. The scatter and waterfall charts help identify areas that may require further investigation.
+- **Geographic performance:** Country and state-level charts allow sales performance to be compared across locations.
 
-### 2. Phones Leads the Displayed Top 5
-Phones is the highest-selling sub-category in the displayed chart, with approximately 1.71M in sales. Copiers and Chairs follow.
-
-### 3. Standard Class Has the Largest Sales Share
-Standard Class represents approximately 59.95% of sales in the displayed shipping-mode chart.
-
-### 4. Sales Change Across Months
-The monthly trend shows fluctuations throughout the year, with sales increasing toward the end of the displayed period.
-
-### 5. Profitability Requires Further Investigation
-The dashboard reports a profit margin of 11.61%. The scatter and waterfall charts can help identify sub-categories that warrant further investigation into discounting and profitability.
-
-*Note: These observations describe the displayed report state. Validate the relevant measures and filter context before comparing them with other reports or using them for business decisions.*
+These observations describe the displayed report and do not establish the causes of sales or profit changes.
 
 ## Business Recommendations
 
-- Review Technology's sales performance to understand which products contribute most to revenue.
-- Evaluate profit alongside sales when comparing product categories.
+- Review category and sub-category performance to understand sales contribution.
+- Evaluate profitability alongside revenue when comparing products.
 - Investigate sub-categories with negative profit contributions.
-- Examine discount levels and profitability together before changing pricing policies.
-- Monitor monthly sales trends to support inventory and sales planning.
-- Evaluate shipping-mode performance alongside cost and customer requirements.
+- Examine discount levels and profitability together before making pricing decisions.
+- Use monthly sales trends to support sales and inventory planning.
+- Compare geographic performance while accounting for differences between countries and states.
+- Evaluate shipping preferences alongside shipping costs and customer requirements.
 
-These are recommendations for further analysis; the dashboard alone does not establish the causes of profit or sales changes.
+These recommendations identify areas for further analysis rather than proven business outcomes.
 
 ## Data Preparation & Cleaning
 
-Data preparation is an important step before building a reliable dashboard.
+Data preparation is an important part of building a reliable Power BI report.
 
-For this project, the data preparation workflow should document the transformations actually performed, such as:
+The preparation process should document the transformations actually performed, including relevant checks such as:
 
 - Reviewing column names and data types.
 - Checking date and numeric fields.
-- Reviewing missing or null values.
-- Checking duplicate records where appropriate.
-- Assessing the relevance of identifier fields such as Row ID.
+- Reviewing missing values and duplicates where appropriate.
+- Assessing the relevance of identifier fields.
 - Confirming that Sales, Profit, Discount, and Quantity are suitable for analysis.
-- Verifying that totals and measures behave correctly in Power BI.
+- Validating DAX measures and report totals.
 
-The exact cleaning steps and data quality issues should be recorded based on the actual Power Query process, rather than assumed.
+The exact cleaning steps should be documented based on the actual Power Query workflow. Null values and duplicate records should not be removed automatically without checking their meaning.
 
 ## DAX Measure
 
@@ -152,46 +164,39 @@ DIVIDE(
 )
 ```
 
-Replace `'RetailVista_Sales'` with the actual table name in your Power BI model if necessary.
-
 This measure calculates total profit divided by total sales and returns zero when the denominator is zero.
+
+Use the exact table name from the Power BI data model.
 
 ## How to Use This Project
 
-1. Download or clone this repository.
-2. Open the `.pbix` file using Power BI Desktop.
-3. Review the dashboard visuals and KPI cards.
+1. Clone or download this repository.
+2. Open `Superstore_Sales_Profit_Analysis.pbix` in Power BI Desktop.
+3. Review the report pages and visualizations.
 4. Explore the charts and available filters.
-5. Review the README to understand the business objectives and findings.
-
-If the report requires an external data source, update the data source path and refresh the report.
+5. If required, update the data source path and refresh the report.
 
 ## Want to Build a Similar Project?
 
-You can use this project as a learning reference to build your own Power BI sales dashboard.
-
-**Recommended workflow:**
+Use this workflow as a reference for building your own sales analysis dashboard:
 
 1. Obtain a dataset that you are permitted to use.
-2. Inspect the raw data and understand the meaning of each column.
-3. Import the dataset into Power BI.
-4. Use Power Query to clean and prepare the data before building visuals.
-5. Review missing values, duplicates, data types, and inconsistent records where relevant.
-6. Create the required DAX measures and validate the results.
-7. Build suitable KPIs and visualizations based on business questions.
-8. Verify the dashboard totals against the prepared dataset.
-9. Document your cleaning steps, analysis, findings, and limitations.
-10. Publish your own report and document your work.
+2. Understand the dataset and its columns.
+3. Import the data into Power BI.
+4. Prepare and transform the data using Power Query.
+5. Review missing values, duplicates, and data types where relevant.
+6. Create DAX measures based on the business questions.
+7. Build appropriate KPIs and visualizations.
+8. Validate totals and measures against the prepared data.
+9. Document the transformations, findings, and limitations.
+10. Publish your project with clear documentation.
 
-**Important:** Do not automatically delete every null value or duplicate. First determine whether it represents an actual data quality issue. Keep the original dataset unchanged and perform transformations in a separate working copy or through Power Query.
-
-If you build on this project, use your own analysis and document the changes you make. Check the original dataset's licence and sharing conditions before uploading data publicly.
+Keep the original dataset unchanged and perform transformations in a separate working copy or through Power Query. Check the dataset's licence and sharing conditions before publishing data publicly.
 
 ## Project Files
 
-Recommended repository structure:
-
-```superstore-sales-profit-analysis/
+```text
+superstore-sales-profit-analysis/
 ├── README.md
 ├── Retail_Vista_Sales_Dataset.csv
 ├── Superstore_Sales_Profit_Analysis.pbix
@@ -199,23 +204,21 @@ Recommended repository structure:
     └── superstore-sales-profit-dashboard.png
 ```
 
-Include the dataset only when its licence permits redistribution.
+Include the dataset in the repository only when its licence permits redistribution.
 
 ## Skills Demonstrated
 
 - Power BI dashboard development
 - Power Query data preparation
-- DAX measures
-- KPI design
+- DAX measures and KPI calculations
 - Sales and profitability analysis
 - Trend analysis
-- Category and sub-category comparisons
+- Product and geographic comparisons
 - Interactive reporting
 - Business insight communication
 
 ## Conclusion
 
-This project demonstrates how retail sales data can be analyzed using Power BI to understand sales trends, compare product performance, monitor profitability, and explore areas for further business investigation.
+This project demonstrates how Power BI can be used to explore retail sales performance, compare products and geographic markets, monitor profitability, and identify areas for further analysis.
 
-It provides a foundation for developing interactive reports that support data-driven decision-making.
-
+The interactive report brings key metrics and detailed visual analysis together in one place to support more informed business decisions.
